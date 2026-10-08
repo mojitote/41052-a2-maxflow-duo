@@ -4,13 +4,16 @@ __pycache__/
 .venv/
 
 # Reports and the teammate handoff are supplied separately.
-docs/report.md
-docs/*.docx
-docs/*.pdf
+docs/*
+!docs/analysis-plan.md
+!docs/predictions-before-experiments.md
+*.docx
+*.pdf
 reports/
 deliverables/
 Jinying_Li_Implementation_Prompt.txt
 *Implementation*Prompt*.txt
+*[Hh]andoff*
 
 # Generated measurements, summaries and figures are local experiment outputs.
 results/*
