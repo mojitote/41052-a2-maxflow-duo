@@ -1,0 +1,18 @@
+build/
+__pycache__/
+.DS_Store
+.venv/
+
+# Reports and the teammate handoff are supplied separately.
+docs/report.md
+docs/*.docx
+docs/*.pdf
+reports/
+deliverables/
+Jinying_Li_Implementation_Prompt.txt
+*Implementation*Prompt*.txt
+
+# Generated measurements, summaries and figures are local experiment outputs.
+results/*
+!results/experiment-plan.json
+figures/

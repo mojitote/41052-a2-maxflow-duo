@@ -1,0 +1,1659 @@
+{
+  "created_at_utc": "2026-09-30T02:48:35.388886+00:00",
+  "repetitions": 7,
+  "batch": 8,
+  "cases": [
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 0.5,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 0.5,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 0.5,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 0.5,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 0.5,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 1,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 1,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 1,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 1,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 34,
+      "param": 1,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 0.5,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 0.5,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 0.5,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 0.5,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 0.5,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 1,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 1,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 1,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 1,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 66,
+      "param": 1,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 0.5,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 0.5,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 0.5,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 0.5,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 0.5,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 1,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 1,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 1,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 1,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 130,
+      "param": 1,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 0.5,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 0.5,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 0.5,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 0.5,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 0.5,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 1,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 1,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 1,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 1,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 258,
+      "param": 1,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 0.5,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 0.5,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 0.5,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 0.5,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 0.5,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 1,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 1,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 1,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 1,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "sparse",
+      "size": 514,
+      "param": 1,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.02,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.02,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.02,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.02,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.02,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.1,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.1,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.1,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.1,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.1,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.3,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.3,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.3,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.3,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 34,
+      "param": 0.3,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.02,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.02,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.02,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.02,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.02,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.1,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.1,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.1,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.1,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.1,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.3,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.3,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.3,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.3,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 66,
+      "param": 0.3,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.02,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.02,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.02,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.02,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.02,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.1,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.1,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.1,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.1,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.1,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.3,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.3,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.3,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.3,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 130,
+      "param": 0.3,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.02,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.02,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.02,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.02,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.02,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.1,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.1,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.1,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.1,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.1,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.3,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.3,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.3,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.3,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "dense",
+      "size": 258,
+      "param": 0.3,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.125,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.125,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.125,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.125,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.125,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.25,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.25,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.25,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.25,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 34,
+      "param": 0.25,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.125,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.125,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.125,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.125,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.125,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.25,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.25,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.25,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.25,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 66,
+      "param": 0.25,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.125,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.125,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.125,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.125,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.125,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.25,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.25,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.25,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.25,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 130,
+      "param": 0.25,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.125,
+      "seed": 11,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.125,
+      "seed": 22,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.125,
+      "seed": 33,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.125,
+      "seed": 44,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.125,
+      "seed": 55,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.25,
+      "seed": 11,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.25,
+      "seed": 22,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.25,
+      "seed": 33,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.25,
+      "seed": 44,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 258,
+      "param": 0.25,
+      "seed": 55,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.125,
+      "seed": 11,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.125,
+      "seed": 22,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.125,
+      "seed": 33,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.125,
+      "seed": 44,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.125,
+      "seed": 55,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.25,
+      "seed": 11,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.25,
+      "seed": 22,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.25,
+      "seed": 33,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.25,
+      "seed": 44,
+      "batch": 1
+    },
+    {
+      "family": "layered",
+      "size": 514,
+      "param": 0.25,
+      "seed": 55,
+      "batch": 1
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.05,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.05,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.05,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.05,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.05,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.2,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.2,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.2,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.2,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.2,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.6,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.6,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.6,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.6,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 34,
+      "param": 0.6,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.05,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.05,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.05,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.05,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.05,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.2,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.2,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.2,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.2,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.2,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.6,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.6,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.6,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.6,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 66,
+      "param": 0.6,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.05,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.05,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.05,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.05,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.05,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.2,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.2,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.2,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.2,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.2,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.6,
+      "seed": 11,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.6,
+      "seed": 22,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.6,
+      "seed": 33,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.6,
+      "seed": 44,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 130,
+      "param": 0.6,
+      "seed": 55,
+      "batch": 8
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.05,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.05,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.05,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.05,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.05,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.2,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.2,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.2,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.2,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.2,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.6,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.6,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.6,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.6,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 258,
+      "param": 0.6,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.05,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.05,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.05,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.05,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.05,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.2,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.2,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.2,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.2,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.2,
+      "seed": 55,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.6,
+      "seed": 11,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.6,
+      "seed": 22,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.6,
+      "seed": 33,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.6,
+      "seed": 44,
+      "batch": 2
+    },
+    {
+      "family": "bipartite",
+      "size": 514,
+      "param": 0.6,
+      "seed": 55,
+      "batch": 2
+    }
+  ],
+  "notes": "Fixed input matrix for the two-person collection. Five seeds per cell; seven repeats; case-specific batches. The common runner writes each collection to a fresh local output directory.",
+  "updated_after_pilot_at_utc": "2026-09-30T02:50:51.531243+00:00",
+  "pilot_adjustment": "Reduce batching based on duration only. No cases removed and no ranking-selected inputs. Largest layered solves take seconds; batching 8 risks excessive runtime. Algorithm suite finalized after pilot: graph hash and n2 generator fix. Main uses one frozen binary.",
+  "algorithms": [
+    "ek",
+    "dinic"
+  ]
+}
