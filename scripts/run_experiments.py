@@ -17,7 +17,7 @@ def digest(path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--algorithms', choices=['ek', 'pair'], default='ek')
+    parser.add_argument('--algorithms', choices=['ek', 'pair'], default='pair')
     parser.add_argument('--clock', choices=['wall', 'cpu'], default='wall')
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--smoke', action='store_true')

@@ -103,6 +103,7 @@ def main():
     summary.to_csv(results / 'cell-summary.csv', index=False)
     facts = {'instances': len(plan['cases']), 'cells': len(ratios), 'raw_rows': len(data),
              'timed_solves': int(data.batch.sum()), 'repeat_max_min': spread(groups.max_us / groups.min_us),
+             'zero_scan_groups': int((groups.scans == 0).sum()),
              'raw_sha256': hashlib.sha256((results / 'full-raw.csv').read_bytes()).hexdigest(),
              'winning_instances': groups.loc[groups.groupby(KEY).time_us.idxmin()].algo.value_counts().to_dict(),
              'interval_method': '10000 paired seed bootstraps of geometric mean ratios, seed 20260930; exploratory 95% percentile intervals'}
@@ -111,10 +112,10 @@ def main():
         plot_family(summary, family, parameter, figures)
     fig, ax = plt.subplots(figsize=(7.5, 4.2))
     for algorithm in ALGORITHMS:
-        block = groups[groups.algo == algorithm]
+        block = groups[(groups.algo == algorithm) & (groups.scans > 0)]
         ax.scatter(block.scans, block.time_us, s=14, alpha=.55, label=NAMES[algorithm], color=COLORS[algorithm])
     ax.set(xscale='log', yscale='log', xlabel='Residual arc inspections', ylabel='Median solve time (µs)',
-           title=f'Work and elapsed time across {len(plan["cases"])} shared inputs')
+           title='Residual exploration and elapsed time')
     ax.legend(); ax.grid(alpha=.2); fig.tight_layout(); fig.savefig(figures / 'scans-time.png'); plt.close(fig)
     (results / 'analysis-summary.json').write_text(json.dumps(facts, indent=2) + '\n')
 

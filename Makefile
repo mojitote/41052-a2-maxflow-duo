@@ -4,7 +4,7 @@ CXXFLAGS = -std=c++17 -O3 -DNDEBUG -Wall -Wextra -Wpedantic
 HEADERS = $(wildcard include/*.hpp)
 
 .PHONY: all test sanitize compare test-pair sanitize-pair clean
-all: build/benchmark build/benchmark_cpu build/test_maxflow
+all: build/benchmark_pair build/benchmark_cpu_pair build/test_maxflow_pair
 build:
 	mkdir -p build
 build/benchmark: src/benchmark.cpp src/maxflow.cpp $(HEADERS) | build
@@ -13,12 +13,10 @@ build/benchmark_cpu: src/benchmark_cpu.cpp src/maxflow.cpp $(HEADERS) | build
 	$(CXX) $(CPPFLAGS) $(CXXFLAGS) src/maxflow.cpp src/benchmark_cpu.cpp -o $@
 build/test_maxflow: tests/test_maxflow.cpp src/maxflow.cpp $(HEADERS) | build
 	$(CXX) $(CPPFLAGS) -std=c++17 -O2 -Wall -Wextra -Wpedantic src/maxflow.cpp tests/test_maxflow.cpp -o $@
-test: build/test_maxflow
-	./build/test_maxflow
+test: test-pair
 build/test_maxflow_sanitize: tests/test_maxflow.cpp src/maxflow.cpp $(HEADERS) | build
 	$(CXX) $(CPPFLAGS) -std=c++17 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer src/maxflow.cpp tests/test_maxflow.cpp -o $@
-sanitize: build/test_maxflow_sanitize
-	./build/test_maxflow_sanitize
+sanitize: sanitize-pair
 
 compare: build/benchmark_pair build/benchmark_cpu_pair
 build/benchmark_pair: src/benchmark.cpp src/maxflow.cpp $(HEADERS) | build

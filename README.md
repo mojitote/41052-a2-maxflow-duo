@@ -1,95 +1,88 @@
 # Maximum flow comparison
 
-Two-person C++17 project for UTS 41052 Advanced Algorithms A2.
+Two-person C++17 project for UTS 41052 Advanced Algorithms A2. Both Edmonds–Karp and Dinic are implemented and use the same residual graph, generators, correctness certificates and benchmark framework.
 
-| Member | Student ID | Primary algorithm | Shared responsibilities |
+| Member | Student ID | Primary algorithm | Shared work |
 | --- | --- | --- | --- |
-| XinghaoYuan | 25145766 | Edmonds–Karp | Residual graph, input generators, tests, benchmarking framework |
-| Jinying Li | 14543526 | Dinic | Dinic integration, paired experiment collection, structured-input explanation |
+| XinghaoYuan | 25145766 | Edmonds–Karp | Residual graph, generators, correctness tests, benchmark and analysis framework |
+| Jinying Li | 14543526 | Dinic | Level-graph and current-arc implementation, integration, structured-input explanation |
 
-The current build runs **Edmonds–Karp** with the shared correctness and benchmark framework. Jinying Li’s implementation slot is `include/dinic.hpp`. The two-algorithm targets use the `MF_ENABLE_DINIC` build switch. Final interpretation of the paired measurements is joint work.
+## Build and test both algorithms
 
-The report and Jinying Li’s detailed implementation prompt are supplied separately. Generated measurements, figures, reports and handoff documents are kept locally through `.gitignore`.
-
-## Run XinghaoYuan’s module
-
-Requirements: a C++17 compiler and Make. Python 3 is used for experiment orchestration. Process CPU timing targets macOS and Linux.
+Requirements: a C++17 compiler and Make. Python 3 runs collection and analysis scripts. Process CPU timing supports macOS and Linux.
 
 ```bash
 make all
 make test
 make sanitize
-./build/benchmark sparse 514 0.5 11 7 2
+./build/benchmark_pair layered 514 0.125 11 7 1
 ```
 
-The tests check 1238 small graphs against an independent exhaustive-cut oracle, a 2048-node chain with optimum seven, reverse-arc rerouting, counted/uncounted parity, and 15 invalid inputs. Each timed benchmark solution is checked after timing against capacity, conservation and minimum-cut certificates.
+The default build and test targets now include **both algorithms**. `make compare test-pair sanitize-pair` provides the same explicit pair targets. Tests check 1,238 small graphs against an independent exhaustive-cut oracle, a 2,048-node chain with optimum seven, reverse-arc rerouting, counted/uncounted parity and 15 invalid inputs. AddressSanitizer and UndefinedBehaviorSanitizer exercise the pair test harness.
 
-An EK-only smoke collection covers all four input families:
+Benchmark CSVs include input size, edges, algorithm, repeat, batch size, maximum flow, solve time, operation counts and graph fingerprint. The CPU executable adds process CPU time. Every timed residual solution is checked after timing against capacity, conservation and minimum-cut certificates.
+
+## Collect experiments
+
+The fixed input plan defines **235 graphs in 47 parameter cells**, with five seeds and seven repetitions per algorithm. Families are sparse random, dense random, layered and unit-capacity bipartite networks. See [the matrix](results/experiment-plan.json) and [the frozen predictions](docs/predictions-before-experiments.md).
+
+A quick integration collection covers all four families:
 
 ```bash
-python3 scripts/run_experiments.py --algorithms ek --smoke --output build/ek-smoke-01
-python3 scripts/run_experiments.py --algorithms ek --smoke --clock cpu --output build/ek-smoke-01
+python3 scripts/run_experiments.py --smoke --output build/pair-smoke-new
+python3 scripts/run_experiments.py --smoke --clock cpu --output build/pair-smoke-new
 ```
 
-The CSV output displays graph size, edge count, algorithm, maximum flow, elapsed time, operation counts and the graph fingerprint. The CPU benchmark also displays process CPU time. Choose a fresh directory for another collection.
-
-## Jinying Li’s implementation stage
-
-Complete `include/dinic.hpp` with this entry point:
-
-```cpp
-template <bool Count>
-Cap dinic(Network &r, int s, int t, Stats &z);
-```
-
-Use BFS levels, recursive blocking-flow search and per-phase current-arc indices. Residual updates go through `Network::send`. Count each BFS invocation including the final failed one, each BFS/DFS arc inspection, and each successful top-level source-to-sink send. Counter updates are compile-time gated, so `Count=false` leaves all counters zero.
-
-After the module is supplied:
-
-```bash
-make compare test-pair sanitize-pair
-./build/benchmark_pair layered 514 0.125 11 2 1
-python3 scripts/run_experiments.py --algorithms pair --smoke --output build/pair-smoke-01
-```
-
-The same oracle, deep-chain, rerouting and certificate checks then exercise both algorithms. The separately supplied prompt contains the exact traversal policy and acceptance steps.
-
-## Paired experiments and joint analysis
-
-The input plan defines **235 graphs in 47 parameter cells**, with five seeds per cell and seven repeats per algorithm. Families are sparse random, dense random, layered, and unit-capacity bipartite networks. See [the input matrix](results/experiment-plan.json), [predictions](docs/predictions-before-experiments.md), and [the analysis plan](docs/analysis-plan.md).
-
-Once both modules pass their tests, collect fresh paired data and generate local summaries:
+For a complete new collection, choose an unused output directory:
 
 ```bash
 python3 -m pip install -r requirements.txt
-python3 scripts/run_experiments.py --algorithms pair --output results/pair-run-01
-python3 scripts/run_experiments.py --algorithms pair --clock cpu --output results/pair-run-01
-python3 scripts/analyze.py --data-dir results/pair-run-01
+python3 scripts/run_experiments.py --output results/pair-run-new
+python3 scripts/run_experiments.py --clock cpu --output results/pair-run-new
+python3 scripts/analyze.py --data-dir results/pair-run-new
 ```
 
-A complete pair collection contains 3290 rows per clock collection. The runner preserves existing outputs and records source, binary, plan and environment hashes. The analysis tools check input and repeat coverage, aggregate seven repeats per graph, compute paired seed ratios, and produce tables and figures in the chosen local run directory. The group then connects the observed rankings to BFS calls, arc inspections, augmentations and graph structure, and writes the final conclusions.
+Each complete clock collection contains 3,290 rows. Existing raw CSVs are protected against overwrite. The runner records the compiler, source/binary/plan hashes, input coverage and environment. Preserve the actual build command and flags with each collection; the final evidence package includes `build-record.json` and the corresponding source snapshot.
 
-Generation, residual copying, warm-up, counted solves, certificates and I/O are outside the solve clock. Search-array initialization is inside it. Plot bands describe the range of five seed medians; exploratory bootstrap intervals use the five paired graph seeds. Repetitions characterize timing on a graph and are separate from independent graph sampling.
+Generation, residual copying, warm-up, counted solves, certificates and I/O are outside the solve clock. Search-array initialization is inside it. Both solvers see the same ordered edges and start with fresh residual networks. Seven repeats estimate timing on one graph; the five seeds supply the independent graph instances. Analysis checks exact coverage and matching graph hashes, flows and counters, then produces paired ratios, exploratory bootstrap intervals, summaries and figures.
+
+## Reproduce the report figures
+
+The report uses the complete collection dated **19 October 2026**. Its data and environment records are supplied in the separate `A2_Maxflow_Final_Evidence_2026-10-19.zip` archive. Extract that archive into this checkout so that `results/final-2026-10-19/full-raw.csv` exists, then run:
+
+```bash
+python3 scripts/analyze.py --data-dir results/final-2026-10-19
+```
+
+The evidence package contains both raw clock collections, the plan, calibration, source hashes, actual build record, measured source snapshot, analysis tables and generated figures. `REPRODUCE.txt` in the package explains the layout and commands. Regenerating figures from supplied measurements and collecting new timings are separate operations; new timings depend on the machine and its state.
+
+Reports, measurements, figures and the teammate handoff remain outside Git, as configured in `.gitignore`. Commit code, tests and documentation; supply the report and experiment archive separately.
 
 ## CMake
 
 ```bash
-cmake -S . -B build/cmake -DCMAKE_BUILD_TYPE=Release
-cmake --build build/cmake
-ctest --test-dir build/cmake --output-on-failure
+cmake -S . -B build/cmake-pair -DCMAKE_BUILD_TYPE=Release
+cmake --build build/cmake-pair
+ctest --test-dir build/cmake-pair --output-on-failure
 ```
 
-Use `-DENABLE_DINIC=ON` for the pair build after implementing Dinic, and `-DSANITIZE=ON` for sanitizer checks. For a custom compiler, use a clean build with `make CXX=g++` and pass `--compiler g++` to the runner.
+Dinic is enabled by default. Use `-DENABLE_DINIC=OFF` for an EK-only build, or `-DSANITIZE=ON` for sanitizer checks. With Make, `make build/benchmark build/test_maxflow` builds the EK-only targets. For another compiler use a clean build, for example `make CXX=g++`, and pass `--compiler g++` to the runner.
+
+## Algorithm and counter contract
+
+Both solvers accept signed 64-bit capacities, parallel edges and opposite original edges. Invalid terminals/endpoints, negative capacities, self-loops and total capacity exceeding `INT64_MAX` are rejected. Each input edge has its own paired residual reverse arc.
+
+Dinic builds complete BFS levels and searches a blocking flow with recursive DFS and per-phase current-arc indices. A successful send preserves its current arc so remaining capacity can be reused. The shared `Network::send` operation updates both residual partners.
+
+Counters count every BFS invocation, including the final failed one; each BFS/DFS adjacency inspection; and each successful top-level source-to-sink send. Compile-time `Count=false` removes counter updates. Both algorithms use O(V+E) storage; the general time bounds are O(VE²) for Edmonds–Karp and O(V²E) for this Dinic implementation. Recursive DFS depends on the process stack for very deep inputs.
 
 ## Repository layout
 
-- `include/edmonds_karp.hpp`: XinghaoYuan’s algorithm module.
-- `include/dinic.hpp`: Jinying Li’s implementation slot.
-- `include/maxflow.hpp` and `src/maxflow.cpp`: common representation, generators and solution certificates.
-- `src/benchmark.cpp` and `src/benchmark_cpu.cpp`: solve timing and separately counted operations.
+- `include/edmonds_karp.hpp`: XinghaoYuan’s algorithm.
+- `include/dinic.hpp`: Jinying Li’s algorithm.
+- `include/maxflow.hpp`, `src/maxflow.cpp`: common representation, generators and certificates.
+- `src/benchmark.cpp`, `src/benchmark_cpu.cpp`: solve timing and separately counted operations.
 - `tests/test_maxflow.cpp`: independent correctness checks.
 - `scripts/`: collection and analysis tools.
-- `results/experiment-plan.json`: the fixed input matrix.
-- `docs/`: predictions and the joint analysis plan.
-
-Commit code, tests and planning changes. Keep generated experiment outputs, report files and the teammate handoff local, as configured in `.gitignore`.
+- `results/experiment-plan.json`: fixed input matrix.
+- `docs/`: frozen predictions and interpretation method.

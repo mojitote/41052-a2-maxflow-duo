@@ -1,16 +1,18 @@
-# Joint analysis plan
+# Joint analysis method
 
-After Jinying Li integrates Dinic, collect both algorithms on the fixed input matrix. XinghaoYuan and Jinying Li then interpret the paired measurements together and update the separately supplied report.
+The completed two-algorithm study uses the fixed input matrix and the complete 19 October 2026 elapsed-time and process-CPU collections. The separately supplied report and evidence archive contain the observations and final interpretation.
 
 | Input family | Main question | Explanatory evidence |
 | --- | --- | --- |
-| Sparse random | When does simpler path search compete with level-graph setup? | Flow value, BFS calls, inspections, early sink discovery |
-| Dense random | Does phase reuse offset repeated traversal of larger adjacency lists? | Edges, augmentations, inspections per solve |
-| Layered | How do parallel paths and the combined width/depth structure affect phase reuse? | Group width/depth, terminal capacities, BFS phases, scans |
-| Bipartite unit capacity | How many matching paths can one level graph process? | Matching size, successful sends, BFS calls, residual reassignment |
+| Sparse random | When does simple path search compete with level-graph setup? | Flow, BFS calls, inspections and early sink discovery |
+| Dense random | Does phase reuse offset repeated traversal of larger adjacency lists? | Edges, augmentations and inspections |
+| Layered | How do useful parallel paths and the combined width/depth structure affect reuse? | Width/depth, terminal capacities, BFS phases and scans |
+| Bipartite unit capacity | How many matching paths can one level graph process? | Matching size, successful sends, BFS calls and reassignment |
 
-Use seven timing repeats to obtain a median for each algorithm and graph. Form EK/Dinic ratios on the same graph, then summarize the five seed ratios with a geometric mean. Inspect exploratory paired bootstrap intervals and keep cells crossing one distinct from consistently ordered cells. Examine CPU time alongside elapsed time and operation counts to identify sensitivity to scheduling and short timer brackets.
+Reduce seven timing repeats to a median for each algorithm and graph. Form EK/Dinic ratios on the same graph, then summarize the five seed ratios using their geometric mean. The exploratory paired bootstrap uses the five independent graph seeds, not timing repeats. Keep intervals crossing one distinct from consistently ordered cells.
 
-Write the final analysis around observed mechanisms, a specific surprise relative to the retained predictions, and a targeted follow-up experiment. Layered width changes depth and edge count together, so that generator supports a combined structural comparison. Separate those factors in an extension before making a causal claim about width alone.
+Compare elapsed time with process CPU time and deterministic work counts. Five-seed cell statistics and one-seed diagnostic examples answer different questions; label each explicitly. Use the diagnostic examples to explain a mechanism, not to replace the full collection.
 
-Numerical tables, figures, the final interpretation and the report are produced from the joint collection and stored locally. The repository contains the tools and plan for that work.
+Write the analysis around observed mechanisms, a specific departure from the retained predictions and a targeted follow-up. Layered width changes depth and edge count together, so that generator supports a combined structural interpretation. Independently vary those factors before assigning a causal effect to width alone.
+
+Numerical outputs, figures, the report and the evidence archive stay outside Git.
